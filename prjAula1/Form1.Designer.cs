@@ -48,6 +48,7 @@
             txtSenha.Size = new Size(133, 33);
             txtSenha.TabIndex = 0;
             txtSenha.Text = "senha";
+            txtSenha.UseSystemPasswordChar = true;
             // 
             // txtUsuario
             // 
@@ -66,7 +67,7 @@
             btnAcessar.FlatStyle = FlatStyle.Popup;
             btnAcessar.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnAcessar.ForeColor = Color.Black;
-            btnAcessar.Location = new Point(302, 284);
+            btnAcessar.Location = new Point(302, 293);
             btnAcessar.Name = "btnAcessar";
             btnAcessar.Size = new Size(91, 41);
             btnAcessar.TabIndex = 2;
@@ -87,7 +88,7 @@
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Times New Roman", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblLogin.ForeColor = Color.LavenderBlush;
-            lblLogin.Location = new Point(285, 88);
+            lblLogin.Location = new Point(285, 89);
             lblLogin.Name = "lblLogin";
             lblLogin.Size = new Size(133, 40);
             lblLogin.TabIndex = 4;
@@ -101,7 +102,7 @@
             btnEsqueceuSenha.Cursor = Cursors.Hand;
             btnEsqueceuSenha.FlatStyle = FlatStyle.Flat;
             btnEsqueceuSenha.ForeColor = SystemColors.ButtonFace;
-            btnEsqueceuSenha.Location = new Point(265, 340);
+            btnEsqueceuSenha.Location = new Point(266, 340);
             btnEsqueceuSenha.Name = "btnEsqueceuSenha";
             btnEsqueceuSenha.Size = new Size(178, 23);
             btnEsqueceuSenha.TabIndex = 6;
@@ -128,7 +129,7 @@
             btnCadastrar.Cursor = Cursors.Hand;
             btnCadastrar.FlatStyle = FlatStyle.Flat;
             btnCadastrar.ForeColor = SystemColors.ButtonFace;
-            btnCadastrar.Location = new Point(265, 369);
+            btnCadastrar.Location = new Point(266, 369);
             btnCadastrar.Name = "btnCadastrar";
             btnCadastrar.Size = new Size(178, 23);
             btnCadastrar.TabIndex = 8;
@@ -150,6 +151,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = SystemColors.ControlLightLight;
             label2.Location = new Point(319, 523);
             label2.Name = "label2";
             label2.Size = new Size(74, 15);

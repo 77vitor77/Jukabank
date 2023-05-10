@@ -19,15 +19,31 @@ namespace prjAula1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == "12312312312") 
+
+            if (txtUsuario.Text== String.Empty || txtSenha.Text == String.Empty)
             {
-                if (txtSenha.Text == "123456") 
-                {
-                    lblMensagem.Text = "Usuário Autentificado";
-                }
+
+                lblMensagem.Text = "Preencha o campo";
+
+
+                
+
+            }
+            if (txtUsuario.Text == "12312312312" || txtSenha.Text == "123456")
+            {
+                lblMensagem.Text = "Usuário valido";
             }
 
-          
+            if (txtUsuario.TextLength < 11 && txtSenha.TextLength < 6)
+            {
+                lblMensagem.Text = "Preencha corretamente os dados!";
+            }
+
+            else 
+            {
+                lblMensagem.Text = "Usuário inválido";
+            }
+
         }
 
 
