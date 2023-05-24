@@ -20,33 +20,7 @@ namespace prjAula1
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (txtUsuario.Text== String.Empty || txtSenha.Text == String.Empty)
-            {
-
-                lblMensagem.Text = "Preencha o campo";
-
-
-                
-
-            }
-            if (txtUsuario.Text == "12312312312" || txtSenha.Text == "123456")
-            {
-                lblMensagem.Text = "Usuário valido";
-            }
-
-            if (txtUsuario.TextLength < 11 && txtSenha.TextLength < 6)
-            {
-                lblMensagem.Text = "Preencha corretamente os dados!";
-            }
-
-            else 
-            {
-                lblMensagem.Text = "Usuário inválido";
-            }
-
         }
-
-
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -96,6 +70,30 @@ namespace prjAula1
         private void label1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+            if (int.TryParse(txtcpf.Text, out int res) == false || int.TryParse(txtSenha.Text, out int res1) == false || txtcpf.TextLength < 11 || txtSenha.TextLength < 6)
+            {
+
+                MessageBox.Show("Preencha o campo corretamente");
+            }
+            else
+            {
+
+                if (txtcpf.Text == "12312312312" || txtSenha.Text == "123456")
+                {
+                    lblMensagem.Text = "Usuário valido";
+
+                }
+                else
+                {
+                    lblMensagem.Text = "Usuário inválido";
+                }
+
+            }
         }
     }
 }

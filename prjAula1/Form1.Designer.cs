@@ -28,16 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             txtSenha = new TextBox();
-            txtUsuario = new TextBox();
-            btnAcessar = new Button();
+            txtcpf = new TextBox();
             aqui = new Label();
             lblLogin = new Label();
             btnEsqueceuSenha = new Button();
-            lblJukasBank = new Label();
             btnCadastrar = new Button();
             lblMensagem = new Label();
             label2 = new Label();
+            btnacessar = new Button();
+            pictureBox2 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // txtSenha
@@ -50,30 +52,16 @@
             txtSenha.Text = "senha";
             txtSenha.UseSystemPasswordChar = true;
             // 
-            // txtUsuario
+            // txtcpf
             // 
-            txtUsuario.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtUsuario.Location = new Point(285, 173);
-            txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(133, 33);
-            txtUsuario.TabIndex = 1;
-            txtUsuario.Text = "usuário";
-            txtUsuario.TextChanged += textBox2_TextChanged;
-            // 
-            // btnAcessar
-            // 
-            btnAcessar.BackColor = SystemColors.Window;
-            btnAcessar.BackgroundImageLayout = ImageLayout.None;
-            btnAcessar.FlatStyle = FlatStyle.Popup;
-            btnAcessar.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnAcessar.ForeColor = Color.Black;
-            btnAcessar.Location = new Point(302, 293);
-            btnAcessar.Name = "btnAcessar";
-            btnAcessar.Size = new Size(91, 41);
-            btnAcessar.TabIndex = 2;
-            btnAcessar.Text = "Acessar";
-            btnAcessar.UseVisualStyleBackColor = false;
-            btnAcessar.Click += button1_Click;
+            txtcpf.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtcpf.ForeColor = SystemColors.ScrollBar;
+            txtcpf.Location = new Point(285, 173);
+            txtcpf.Name = "txtcpf";
+            txtcpf.Size = new Size(133, 33);
+            txtcpf.TabIndex = 1;
+            txtcpf.Text = "usuário";
+            txtcpf.TextChanged += textBox2_TextChanged;
             // 
             // aqui
             // 
@@ -86,18 +74,19 @@
             // lblLogin
             // 
             lblLogin.AutoSize = true;
-            lblLogin.Font = new Font("Times New Roman", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblLogin.ForeColor = Color.LavenderBlush;
-            lblLogin.Location = new Point(285, 89);
+            lblLogin.BackColor = Color.Transparent;
+            lblLogin.Font = new Font("Agency FB", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLogin.ForeColor = Color.HotPink;
+            lblLogin.Location = new Point(317, 128);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(133, 40);
+            lblLogin.Size = new Size(76, 42);
             lblLogin.TabIndex = 4;
             lblLogin.Text = "LOGIN";
             lblLogin.Click += label1_Click;
             // 
             // btnEsqueceuSenha
             // 
-            btnEsqueceuSenha.BackColor = Color.DarkSlateGray;
+            btnEsqueceuSenha.BackColor = Color.DeepPink;
             btnEsqueceuSenha.BackgroundImageLayout = ImageLayout.None;
             btnEsqueceuSenha.Cursor = Cursors.Hand;
             btnEsqueceuSenha.FlatStyle = FlatStyle.Flat;
@@ -110,21 +99,9 @@
             btnEsqueceuSenha.UseVisualStyleBackColor = false;
             btnEsqueceuSenha.Click += button2_Click;
             // 
-            // lblJukasBank
-            // 
-            lblJukasBank.AutoSize = true;
-            lblJukasBank.Font = new Font("Agency FB", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblJukasBank.ForeColor = Color.Snow;
-            lblJukasBank.Location = new Point(12, 25);
-            lblJukasBank.Name = "lblJukasBank";
-            lblJukasBank.Size = new Size(165, 45);
-            lblJukasBank.TabIndex = 7;
-            lblJukasBank.Text = "JUCAS BANK";
-            lblJukasBank.Click += label2_Click_1;
-            // 
             // btnCadastrar
             // 
-            btnCadastrar.BackColor = Color.DarkSlateGray;
+            btnCadastrar.BackColor = Color.DeepPink;
             btnCadastrar.BackgroundImageLayout = ImageLayout.None;
             btnCadastrar.Cursor = Cursors.Hand;
             btnCadastrar.FlatStyle = FlatStyle.Flat;
@@ -143,42 +120,71 @@
             lblMensagem.ForeColor = SystemColors.ControlLightLight;
             lblMensagem.Location = new Point(314, 419);
             lblMensagem.Name = "lblMensagem";
-            lblMensagem.Size = new Size(66, 15);
+            lblMensagem.Size = new Size(0, 15);
             lblMensagem.TabIndex = 9;
-            lblMensagem.Text = "Mensagem";
             lblMensagem.Click += label1_Click_1;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.ForeColor = SystemColors.ControlLightLight;
+            label2.BackColor = Color.Transparent;
+            label2.ForeColor = Color.HotPink;
             label2.Location = new Point(319, 523);
             label2.Name = "label2";
-            label2.Size = new Size(74, 15);
+            label2.Size = new Size(77, 15);
             label2.TabIndex = 10;
-            label2.Text = "JUKAS BANK";
+            label2.Text = "JUKA'S BANK";
             label2.Click += label2_Click_2;
+            // 
+            // btnacessar
+            // 
+            btnacessar.BackColor = Color.DeepPink;
+            btnacessar.BackgroundImageLayout = ImageLayout.None;
+            btnacessar.Cursor = Cursors.Hand;
+            btnacessar.FlatStyle = FlatStyle.Flat;
+            btnacessar.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnacessar.ForeColor = SystemColors.ButtonFace;
+            btnacessar.Location = new Point(306, 275);
+            btnacessar.Name = "btnacessar";
+            btnacessar.Size = new Size(100, 39);
+            btnacessar.TabIndex = 11;
+            btnacessar.Text = "Acessar";
+            btnacessar.UseVisualStyleBackColor = false;
+            btnacessar.Click += button1_Click_1;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(209, 12);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(293, 113);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 38;
+            pictureBox2.TabStop = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DarkSlateGray;
-            ClientSize = new Size(724, 559);
+            BackColor = Color.LightPink;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(714, 559);
+            Controls.Add(pictureBox2);
+            Controls.Add(btnacessar);
             Controls.Add(label2);
             Controls.Add(lblMensagem);
             Controls.Add(btnCadastrar);
             Controls.Add(btnEsqueceuSenha);
             Controls.Add(lblLogin);
             Controls.Add(aqui);
-            Controls.Add(btnAcessar);
-            Controls.Add(txtUsuario);
+            Controls.Add(txtcpf);
             Controls.Add(txtSenha);
-            Controls.Add(lblJukasBank);
             Cursor = Cursors.Hand;
             Name = "Form1";
             Text = "Hello Word2";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -186,14 +192,14 @@
         #endregion
 
         private TextBox txtSenha;
-        private TextBox txtUsuario;
-        private Button btnAcessar;
+        private TextBox txtcpf;
         private Label aqui;
         private Label lblLogin;
         private Button btnEsqueceuSenha;
-        private Label lblJukasBank;
         private Button btnCadastrar;
         private Label lblMensagem;
         private Label label2;
+        private Button btnacessar;
+        internal protected PictureBox pictureBox2;
     }
 }
