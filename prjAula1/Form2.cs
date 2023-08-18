@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.Logging;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,15 @@ namespace prjAula1
 {
     public partial class Form2 : Form
     {
+        public class Cliente : Form3
+        {
+
+
+            public Cliente()
+            {
+
+            }
+        }
         public Form2()
         {
             InitializeComponent();
@@ -29,7 +39,9 @@ namespace prjAula1
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            var telamenu = new Form1();
+            this.Hide();
+            telamenu.Show();
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -41,5 +53,17 @@ namespace prjAula1
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var tranferencia = new Form5();
+            this.Hide();
+            tranferencia.Show();
+        }
+
+
+
+
+
     }
 }

@@ -31,5 +31,12 @@ namespace prjAula1
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var telamenu = new Form2();
+            this.Hide();
+            telamenu.Show();
+        }
     }
 }

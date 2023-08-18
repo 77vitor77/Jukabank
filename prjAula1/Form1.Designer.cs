@@ -46,21 +46,22 @@
             // 
             txtSenha.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             txtSenha.Location = new Point(285, 217);
+            txtSenha.MaxLength = 6;
             txtSenha.Name = "txtSenha";
+            txtSenha.PlaceholderText = "senha";
             txtSenha.Size = new Size(133, 33);
             txtSenha.TabIndex = 0;
-            txtSenha.Text = "senha";
-            txtSenha.UseSystemPasswordChar = true;
             // 
             // txtcpf
             // 
             txtcpf.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             txtcpf.ForeColor = SystemColors.ScrollBar;
             txtcpf.Location = new Point(285, 173);
+            txtcpf.MaxLength = 11;
             txtcpf.Name = "txtcpf";
+            txtcpf.PlaceholderText = "usuario";
             txtcpf.Size = new Size(133, 33);
             txtcpf.TabIndex = 1;
-            txtcpf.Text = "usuário";
             txtcpf.TextChanged += textBox2_TextChanged;
             // 
             // aqui

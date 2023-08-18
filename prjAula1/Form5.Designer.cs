@@ -39,6 +39,8 @@
             txtUsuario = new TextBox();
             button2 = new Button();
             pictureBox2 = new PictureBox();
+            radioButton2 = new RadioButton();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -63,7 +65,7 @@
             radioButton1.BackColor = Color.Transparent;
             radioButton1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             radioButton1.ForeColor = Color.DeepPink;
-            radioButton1.Location = new Point(217, 38);
+            radioButton1.Location = new Point(151, 38);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(107, 29);
             radioButton1.TabIndex = 29;
@@ -89,7 +91,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Agency FB", 24F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.DeepPink;
-            label2.Location = new Point(151, 107);
+            label2.Location = new Point(135, 107);
             label2.Name = "label2";
             label2.Size = new Size(30, 40);
             label2.TabIndex = 31;
@@ -134,9 +136,9 @@
             txtUsuario.ForeColor = SystemColors.ScrollBar;
             txtUsuario.Location = new Point(109, 261);
             txtUsuario.Name = "txtUsuario";
+            txtUsuario.PlaceholderText = "valor";
             txtUsuario.Size = new Size(195, 33);
             txtUsuario.TabIndex = 35;
-            txtUsuario.Text = "Valor";
             txtUsuario.TextChanged += txtUsuario_TextChanged;
             // 
             // button2
@@ -163,12 +165,41 @@
             pictureBox2.TabIndex = 37;
             pictureBox2.TabStop = false;
             // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.BackColor = Color.Transparent;
+            radioButton2.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            radioButton2.ForeColor = Color.DeepPink;
+            radioButton2.Location = new Point(264, 38);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(134, 29);
+            radioButton2.TabIndex = 38;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "tranferencia";
+            radioButton2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.DeepPink;
+            button1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(556, 423);
+            button1.Name = "button1";
+            button1.Size = new Size(195, 42);
+            button1.TabIndex = 39;
+            button1.Text = "Voltar a tela menu";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // Form5
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(763, 509);
+            Controls.Add(button1);
+            Controls.Add(radioButton2);
             Controls.Add(pictureBox2);
             Controls.Add(button2);
             Controls.Add(txtUsuario);
@@ -199,5 +230,7 @@
         private TextBox txtUsuario;
         private Button button2;
         internal protected PictureBox pictureBox2;
+        private RadioButton radioButton2;
+        private Button button1;
     }
 }

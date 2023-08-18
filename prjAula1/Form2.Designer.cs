@@ -39,7 +39,6 @@
             button2 = new Button();
             button1 = new Button();
             button4 = new Button();
-            button5 = new Button();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
@@ -117,7 +116,7 @@
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.Location = new Point(407, 224);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(281, 152);
+            pictureBox2.Size = new Size(274, 103);
             pictureBox2.TabIndex = 14;
             pictureBox2.TabStop = false;
             // 
@@ -138,7 +137,7 @@
             button2.BackColor = Color.DeepPink;
             button2.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(432, 473);
+            button2.Location = new Point(557, 431);
             button2.Name = "button2";
             button2.Size = new Size(145, 36);
             button2.TabIndex = 17;
@@ -151,7 +150,7 @@
             button1.BackColor = Color.DeepPink;
             button1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(74, 473);
+            button1.Location = new Point(557, 473);
             button1.Name = "button1";
             button1.Size = new Size(145, 36);
             button1.TabIndex = 18;
@@ -163,24 +162,13 @@
             button4.BackColor = Color.LavenderBlush;
             button4.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button4.ForeColor = Color.HotPink;
-            button4.Location = new Point(432, 262);
+            button4.Location = new Point(422, 236);
             button4.Name = "button4";
             button4.Size = new Size(244, 36);
             button4.TabIndex = 20;
             button4.Text = "Depositar";
             button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            button5.BackColor = Color.LavenderBlush;
-            button5.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button5.ForeColor = Color.HotPink;
-            button5.Location = new Point(432, 304);
-            button5.Name = "button5";
-            button5.Size = new Size(244, 36);
-            button5.TabIndex = 21;
-            button5.Text = "Agendar Pagamento";
-            button5.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // label5
             // 
@@ -281,7 +269,6 @@
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button1);
             Controls.Add(button2);
